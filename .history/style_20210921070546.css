@@ -1,5 +1,5 @@
 html {
-    --grey: #d3cfcf;
+    --grey: #b6aeae;
     --gray: var(--grey);
     --blue: #1a84c5;
     --pink: #D60087;
@@ -47,8 +47,6 @@ button {
     --bs-color: rgba(0,0,0,0.1);
     box-shadow: inset 0 -2px 5px var(--bs-color);
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 10px 0;
 }
 
 button[aria-selected="true"] {
