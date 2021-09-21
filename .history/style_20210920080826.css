@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+}

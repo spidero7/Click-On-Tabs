@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    
+}

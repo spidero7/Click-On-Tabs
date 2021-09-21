@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+[role="tabpanel"] {
+    background: var(--blue);
+    padding: 2rem;
+}
+
+button {
+    background: var;
+}

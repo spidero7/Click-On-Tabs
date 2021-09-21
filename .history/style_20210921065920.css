@@ -1,0 +1,61 @@
+html {
+    --grey: #e7e7e7;
+    --gray: var(--grey);
+    --blue: #1a84c5;
+    --pink: #D60087;
+    --yellow: #ffc600;
+    --black: #2e2e2e;
+    --red: #c73737;
+    --green: #61e846;
+    --text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+    --box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+[role="tabpanel"] {
+    background: var(--blue);
+    padding: 2rem;
+}
+
+button {
+    background: var(--grey);
+    border: 0;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    --bs-color: rgba(0,0,0,0.1);
+    box-shadow: inset 0 -2px 5px var(--bs-color);
+    cursor: pointer;
+}
+
+button[aria-selected="true"] {
+    background: var(--blue);
+    box-shadow: none;
+    color: rgb(0,0,0,0.7);
+}
+
+button:focus {
+    outline: 0;
+    --bs-color: rgba(0,0,0,0.6);
+}

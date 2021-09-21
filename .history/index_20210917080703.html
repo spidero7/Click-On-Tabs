@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <div role="tablist" aria-label="Week">
+        <button role="tab" aria-selected="true" id="mon">
+          Monday
+        </button>
+        <button role="tab" aria-selected="false" id="tue">Tuesday
+        </button>
+        <button role="tab" aria-selected="false" id="wed">
+          Wednesday
+        </button>
+      </div>
+      <div role="tabpanel" aria-labelledby="mon">
+        <p>Do loundry</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="tue" hidden>
+        <p>Do homework</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="wed" hidden>
+        <p>PHP is great!</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

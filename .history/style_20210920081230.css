@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+[role="tabpanel"] {
+    background: var(--blue);
+    padding: 2rem;
+}
+
+button {
+    background: var(--grey);
+    border: 0;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    --bs-color: rgba(0,0,0,0.1)
+}
