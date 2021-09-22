@@ -27,9 +27,5 @@ function handleTabClick(event) {
 
 // METHOD 2 - find in the array of tabPanels
 console.log(tabPanels)
-const tabPanel = tabPanels.find(
-    panel => panel.getAttribute('aria-labelledby') === id
-);
-tabPanel.hidden = false;
 }
 tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
