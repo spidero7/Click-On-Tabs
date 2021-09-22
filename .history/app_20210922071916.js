@@ -6,6 +6,7 @@ function handleTabClick(event) {
     // hide all tab panels
     tabPanels.forEach(panel => {
         panel.hidden = true;
+        console.log(panel)
     })
     // mark all tabs as unselected
     // mark the clicked tab as selected
