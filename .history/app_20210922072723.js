@@ -9,7 +9,7 @@ function handleTabClick(event) {
     });
     // mark all tabs as unselected
     tabButtons.forEach(tab => {
-        //tab.ariaSelected = false;
+        tab.
         tab.setAttribute('aria-selected', false);
     })
     // mark the clicked tab as selected

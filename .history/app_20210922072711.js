@@ -9,8 +9,7 @@ function handleTabClick(event) {
     });
     // mark all tabs as unselected
     tabButtons.forEach(tab => {
-        //tab.ariaSelected = false;
-        tab.setAttribute('aria-selected', false);
+        tab.setAttribute('aria-selected')
     })
     // mark the clicked tab as selected
     // find the associated tabPanel and show it
